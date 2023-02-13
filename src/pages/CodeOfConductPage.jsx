@@ -8,7 +8,7 @@ import {
   memberRequirements,
 } from '../data/codeOfConduct'
 import { makeStyles } from '@mui/styles'
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 
 const useStyles = makeStyles({
   header: {

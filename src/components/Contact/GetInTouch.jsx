@@ -44,13 +44,7 @@ const GetInTouch = () => {
         >
           {clubRepresentatives.map((representative) => {
             return (
-              <Grid
-                item
-                xs={12}
-                md={4}
-                sx={{ textAlign: 'center' }}
-                key={representative.email}
-              >
+              <Grid item xs={12} md={4} sx={{ textAlign: 'center' }} key={representative.email}>
                 <Typography variant="h6" pb={1}>
                   {representative.name}
                 </Typography>

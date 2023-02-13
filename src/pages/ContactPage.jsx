@@ -3,7 +3,7 @@ import { Container, Box, Grid, Typography } from '@mui/material'
 import ContactForm from '../components/Contact/ContactForm'
 import ContactInfo from '../components/Contact/ContactInfo'
 import GetInTouch from '../components/Contact/GetInTouch'
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 
 const ContactPage = () => {
   return (

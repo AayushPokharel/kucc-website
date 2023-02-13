@@ -1,7 +1,7 @@
 import { Container, Typography, Box, Stack, Link } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 import { FileOpen } from '@mui/icons-material'
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 import db from '../../config/firebase'
 import { collection, onSnapshot } from 'firebase/firestore'
 
@@ -38,20 +38,24 @@ const ItExpressPage = () => {
           </Typography>
         </Box>
         <Stack spacing={4} sx={{ marginBottom: 1 }}>
-          {data && data.map((itexp) => (
-            <Box key={itexp.year} sx={{ display: 'flex', alignItems: 'center', borderBottom: '1px solid #d4d4d4' }}>
-              <Link href={itexp.url}  target="_blank">
-                <FileOpen fontSize="small" sx={{ color: '#25bcea' }} />
-                <Typography
-                  variant="subtitle"
-                  color="#25bcea"
-                  sx={{ fontWeight: 'bold', marginLeft: 1 }}
-                >
-                  IT Express {itexp.year}
-                </Typography>
-              </Link>
-            </Box>
-          ))}
+          {data &&
+            data.map((itexp) => (
+              <Box
+                key={itexp.year}
+                sx={{ display: 'flex', alignItems: 'center', borderBottom: '1px solid #d4d4d4' }}
+              >
+                <Link href={itexp.url} target="_blank">
+                  <FileOpen fontSize="small" sx={{ color: '#25bcea' }} />
+                  <Typography
+                    variant="subtitle"
+                    color="#25bcea"
+                    sx={{ fontWeight: 'bold', marginLeft: 1 }}
+                  >
+                    IT Express {itexp.year}
+                  </Typography>
+                </Link>
+              </Box>
+            ))}
         </Stack>
         <Typography variant="caption" color="text.secondary">
           {' '}

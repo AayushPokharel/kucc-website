@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 import { Box, Container, Grid, Typography } from '@mui/material'
 import COLORS from '../../config/colors'
 import NewsNoticeList from '../../components/NewsNotice/NewsNoticeList'
@@ -15,14 +15,20 @@ const NewsNoticePage = () => {
       </Helmet>
       <Container style={{ height: 4 }}></Container>
       <Box
-        sx={{ display: 'flex', height: { md: 136, xs: 300 }, mb: 4, backgroundColor: COLORS.light, py: 3, px: 12 }}
+        sx={{
+          display: 'flex',
+          height: { md: 136, xs: 300 },
+          mb: 4,
+          backgroundColor: COLORS.light,
+          py: 3,
+          px: 12,
+        }}
       >
         <Typography>
           <span style={{ fontWeight: 'bold', fontSize: 32, color: COLORS.black }}>
             News and Notices
           </span>
         </Typography>
-        
       </Box>
       <Grid
         sx={{ background: 'text.light' }}
@@ -34,7 +40,7 @@ const NewsNoticePage = () => {
         style={{ paddingLeft: 60, paddingRight: 0 }}
       >
         <Grid item xs={6} md={8} pl={20}>
-          <Container sx={{ py: 4, }}>
+          <Container sx={{ py: 4 }}>
             <Box textAlign="center" mb={1}>
               <Typography variant="subtitle1" color="text.secondary">
                 <h4 style={{ color: COLORS.primary }}>Kathmandu Univesity Computer Club</h4>

@@ -8,7 +8,7 @@ const COLORS = {
   danger: '#ff5252',
   dark: '#0c0c0c',
   darkBlue: '#19294d',
-  lightGrey: '#a3a4ae'
+  lightGrey: '#a3a4ae',
 }
 
 export default COLORS

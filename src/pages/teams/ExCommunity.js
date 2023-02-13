@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Container, Grid, Typography } from '@mui/material'
 import TeamCard from '../../components/TeamCard/TeamCard'
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 
 const ExCommunity = () => {
   return (

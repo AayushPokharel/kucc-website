@@ -19,7 +19,7 @@ function Activities() {
     font-size: 32px;
     font-weight: bold;
     font-family: 'Urbanist', sans-serif;
-    margin-bottom:55.45px ;
+    margin-bottom: 55.45px;
   `
   const SubTitle = styled.h2`
     color: #00baa3;

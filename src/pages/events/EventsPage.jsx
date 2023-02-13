@@ -4,7 +4,7 @@ import db from '../../config/firebase'
 import EventList from '../../components/Event/EventList'
 import EventFilter from '../../components/EventFilter/EventFilter'
 import { Container, Box, Typography } from '@mui/material'
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 
 const EventsPage = () => {
   useEffect(() => {
